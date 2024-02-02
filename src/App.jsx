@@ -9,7 +9,7 @@ function App() {
     fetch('https://sampalproject.onrender.com/')
     .then(res=>res.json())
     .then(data=>setMessage(data.message))
-    .catch(err=>setMessage(err))
+    .catch(err=>setMessage("Service is suspended by the owner"))
 
   },[])
 
